@@ -7,7 +7,6 @@ class SampleTest {
     @Test
     fun testWelcome() {
         welcome()
-
         // Example of test
         val expected = 1
         val actual = 1
@@ -16,6 +15,6 @@ class SampleTest {
 
     @Test
     fun testHello() {
-        // TODO: implement to call hello function
+        hello()
     }
 }

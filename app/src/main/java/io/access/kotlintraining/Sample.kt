@@ -4,4 +4,8 @@ fun welcome() {
     println("welcome to ACCESS!")
 }
 
+fun hello() {
+    println("Hello World!")
+}
+
 // TODO: declare hello function
