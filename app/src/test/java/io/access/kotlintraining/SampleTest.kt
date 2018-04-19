@@ -55,4 +55,19 @@ class SampleTest {
         assertEquals(expected3, actual3, "[want] $expected3 [got] $actual3")
     }
 
+    @Test
+    fun testPower() {
+        val expected1 = power(2,3)
+        val actual1 = 8
+        assertEquals(expected1, actual1, "[want] $expected1 [got] $actual1")
+
+        val expected2 = power(3,2)
+        val actual2 = 9
+        assertEquals(expected2, actual2, "[want] $expected2 [got] $actual2")
+
+        val expected3 = power(4,3)
+        val actual3 = 64
+        assertEquals(expected3, actual3, "[want] $expected3 [got] $actual3")
+    }
+
 }

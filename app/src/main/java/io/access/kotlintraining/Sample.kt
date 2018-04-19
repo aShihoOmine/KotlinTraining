@@ -36,3 +36,15 @@ fun urudoshi(j: Int): String {
     }
 }
 
+fun power(a: Int, n: Int): Int {
+    if (a < 0 && n < 0) {
+        println("inputs must be positive. return 0")
+    }
+    var i = 1
+    var ans = a
+    while (i < n){
+        ans = ans*a
+        i = i+1
+    }
+    return ans
+}
