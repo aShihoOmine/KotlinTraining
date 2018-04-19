@@ -37,5 +37,22 @@ class SampleTest {
         assertEquals(expected3, actual3, "[want] $expected3 [got] $actual3")
     }
 
+    @Test
+    fun testUrudoshi() {
+        var j = 1212
+        val expected1 = urudoshi(1212)
+        val actual1 = "うるう年"
+        assertEquals(expected1, actual1, "[want] $expected1 [got] $actual1")
+
+        j = 1700
+        val expected2 = urudoshi(1700)
+        val actual2 = "平年"
+        assertEquals(expected2, actual2, "[want] $expected2 [got] $actual2")
+
+        j = 1600
+        val expected3 = urudoshi(1600)
+        val actual3 = "うるう年"
+        assertEquals(expected3, actual3, "[want] $expected3 [got] $actual3")
+    }
 
 }

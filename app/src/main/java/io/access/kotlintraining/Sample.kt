@@ -26,5 +26,13 @@ fun fizzbuzzLoop() {
     }
 }
 
-
+fun urudoshi(j: Int): String {
+    if (j % 4 != 0) {
+        return "平年"
+    } else if (j % 100 == 0 && j % 400 != 0) {
+        return "平年"
+    } else {
+        return "うるう年"
+    }
+}
 
