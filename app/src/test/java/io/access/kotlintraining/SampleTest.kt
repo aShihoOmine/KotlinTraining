@@ -70,4 +70,16 @@ class SampleTest {
         assertEquals(expected3, actual3, "[want] $expected3 [got] $actual3")
     }
 
+    @Test
+    fun testEven() {
+        assertEquals(2.isEven(), true)
+        assertEquals(3.isEven(), false)
+    }
+
+    @Test
+    fun testOdd() {
+        assertEquals(2.isOdd(), false)
+        assertEquals(3.isOdd(), true)
+    }
+
 }
