@@ -21,19 +21,21 @@ class SampleTest {
 
     @Test
     fun testFizzBuzz() {
-        val i = 3
+        var i = 3
         val expected1 = fizzbuzz(3)
         val actual1 = "Fizz"
         assertEquals(expected1, actual1, "[want] $expected1 [got] $actual1")
 
-        val i = 5
-        val expected2 = fizzbuzz(3)
+        i = 5
+        val expected2 = fizzbuzz(5)
         val actual2 = "Buzz"
         assertEquals(expected2, actual2, "[want] $expected2 [got] $actual2")
 
-        val i = 13
-        val expected3 = fizzbuzz(3)
+        i = 13
+        val expected3 = fizzbuzz(13)
         val actual3 = "13"
         assertEquals(expected3, actual3, "[want] $expected3 [got] $actual3")
     }
+
+
 }

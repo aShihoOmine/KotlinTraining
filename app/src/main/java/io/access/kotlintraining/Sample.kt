@@ -10,7 +10,7 @@ fun hello() {
     println("Hello World!")
 }
 
-fun fizzbuzz(i: Int):String {
+fun fizzbuzz(i: Int): String {
     if (i % 3 == 0) {
         return "Fizz"
     } else if (i % 5 == 0) {
@@ -25,3 +25,6 @@ fun fizzbuzzLoop() {
         fizzbuzz(n)
     }
 }
+
+
+
