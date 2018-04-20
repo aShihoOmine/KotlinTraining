@@ -3,6 +3,7 @@ package io.access.kotlintraining
 import org.junit.Test
 import kotlin.test.assertEquals
 
+
 class SampleTest {
     @Test
     fun testWelcome() {
@@ -57,15 +58,15 @@ class SampleTest {
 
     @Test
     fun testPower() {
-        val expected1 = power(2,3)
+        val expected1 = power(2, 3)
         val actual1 = 8
         assertEquals(expected1, actual1, "[want] $expected1 [got] $actual1")
 
-        val expected2 = power(3,2)
+        val expected2 = power(3, 2)
         val actual2 = 9
         assertEquals(expected2, actual2, "[want] $expected2 [got] $actual2")
 
-        val expected3 = power(4,3)
+        val expected3 = power(4, 3)
         val actual3 = 64
         assertEquals(expected3, actual3, "[want] $expected3 [got] $actual3")
     }
@@ -82,4 +83,11 @@ class SampleTest {
         assertEquals(3.isOdd(), true)
     }
 
+    @Test
+    fun testRoll() {
+            var d = Dice(15)
+        for (i in 1..105) {
+            d.roll()
+        }
+    }
 }

@@ -1,5 +1,7 @@
 package io.access.kotlintraining
 
+import java.util.Random
+
 fun welcome() {
     println("welcome to ACCESS!")
 }
@@ -42,20 +44,21 @@ fun power(a: Int, n: Int): Int {
     }
     var i = 1
     var ans = a
-    while (i < n){
-        ans = ans*a
-        i = i+1
+    while (i < n) {
+        ans = ans * a
+        i = i + 1
     }
     return ans
 }
 
 //exercise2
 
-fun Int.isEven():Boolean{
+fun Int.isEven(): Boolean {
     return this % 2 == 0
 }
 
-fun Int.isOdd():Boolean{
+fun Int.isOdd(): Boolean {
     return this % 2 == 1
 }
+
 
