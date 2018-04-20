@@ -85,9 +85,17 @@ class SampleTest {
 
     @Test
     fun testRoll() {
-            var d = Dice(15)
+        var d = Dice(15)
         for (i in 1..105) {
             d.roll()
+        }
+    }
+
+    @Test
+    fun testNabeatsu() {
+        var man = Nabeatsu()
+        for (i in 1..15){
+            man.next();
         }
     }
 }
